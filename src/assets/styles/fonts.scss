@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fhlbm4');
+  src:  url('../fonts/icomoon.eot?fhlbm4#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?fhlbm4') format('truetype'),
+  url('../fonts/icomoon.woff?fhlbm4') format('woff'),
+  url('../fonts/icomoon.svg?fhlbm4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map2:before {
+  content: "\e94c";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-bookmark:before {
+  content: "\e9d2";
+}
+
+/*-------------------------------------*/
+        //GIZ icons from armenia.travel
+/*-------------------------------------*/
+
+@font-face {
+  font-family: 'GIZ';
+  src:  url('../fonts/GIZ.woff2?vh5p04') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="giz-"], [class*=" giz-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'GIZ' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.giz-air-secondary:before {
+  content: "\e939";
+}
+.giz-earth-secondary:before {
+  content: "\e93a";
+}
+.giz-snow-ice:before {
+  content: "\e93b";
+}
+.giz-water-secondary:before {
+  content: "\e93c";
+}
+.giz-practical-info:before {
+  content: "\e938";
+}
+.giz-arrow-path:before {
+  content: "\e937";
+}
+.giz-pause:before {
+  content: "\e935";
+}
+.giz-play:before {
+  content: "\e936";
+}
+.giz-pause-circle:before {
+  content: "\e92b";
+}
+.giz-play-circle:before {
+  content: "\e91c";
+}
+.giz-cancel:before {
+  content: "\e934";
+}
+.giz-pdf-arrow:before {
+  content: "\e933";
+}
+.giz-decorative-2:before {
+  content: "\e90b";
+}
+.giz-video:before {
+  content: "\e930";
+  color: #7b7f86;
+}
+.giz-image:before {
+  content: "\e931";
+  color: #7b7f86;
+}
+.giz-pdf:before {
+  content: "\e932";
+  color: #7b7f86;
+}
+.giz-check:before {
+  content: "\e92d";
+}
+.giz-accomodation:before {
+  content: "\e900";
+}
+.giz-adventure-2:before {
+  content: "\e901";
+}
+.giz-adventure:before {
+  content: "\e902";
+}
+.giz-arrow:before {
+  content: "\e903";
+}
+.giz-arrow-medium:before {
+  content: "\e904";
+}
+.giz-arrow-long:before {
+  content: "\e905";
+}
+.giz-arrow-hover:before {
+  content: "\e906";
+}
+.giz-water:before {
+  content: "\e907";
+}
+.giz-air:before {
+  content: "\e908";
+}
+.giz-covid:before {
+  content: "\e909";
+}
+.giz-decorative-1:before {
+  content: "\e90a";
+}
+.giz-decorative-3:before {
+  content: "\e90c";
+}
+.giz-earth:before {
+  content: "\e90d";
+}
+.giz-gastro-2:before {
+  content: "\e90e";
+}
+.giz-gastro-yards-3:before {
+  content: "\e90f";
+}
+.giz-gastro:before {
+  content: "\e910";
+}
+.giz-lake:before {
+  content: "\e911";
+}
+.giz-landscape:before {
+  content: "\e912";
+}
+.giz-museum:before {
+  content: "\e913";
+}
+.giz-places:before {
+  content: "\e914";
+}
+.giz-top-hiking-trails:before {
+  content: "\e915";
+}
+.giz-transport:before {
+  content: "\e916";
+}
+.giz-travel-tips:before {
+  content: "\e917";
+}
+.giz-unesco-heritage:before {
+  content: "\e918";
+}
+.giz-visa:before {
+  content: "\e919";
+}
+.giz-map-pin:before {
+  content: "\e91a";
+}
+.giz-pin:before {
+  content: "\e91b";
+}
+.giz-sad-smily:before {
+  content: "\e91d";
+}
+.giz-share:before {
+  content: "\e91e";
+}
+.giz-search:before {
+  content: "\e91f";
+}
+.giz-bookmarks:before {
+  content: "\e920";
+}
+.giz-map:before {
+  content: "\e921";
+}
+.giz-close:before {
+  content: "\e922";
+}
+.giz-arrow-small:before {
+  content: "\e92c";
+}
+.giz-dropdown:before {
+  content: "\e923";
+}
+.giz-next:before {
+  content: "\e924";
+}
+.giz-calendar:before {
+  content: "\e925";
+}
+.giz-facebook:before {
+  content: "\e926";
+}
+.giz-twitter:before {
+  content: "\e927";
+}
+.giz-instagram:before {
+  content: "\e928";
+}
+.giz-link:before {
+  content: "\e92f";
+}
+.giz-facebook-share:before {
+  content: "\e92e";
+}
+.giz-youtube:before {
+  content: "\e929";
+}
+.giz-telegram:before {
+  content: "\e92a";
+}
