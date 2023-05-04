@@ -7,12 +7,16 @@ import logo from '@/assets/images/logo.svg';
 import { pingMedium } from '@/assets/fonts/fonts';
 import { HEADER_ICONS_NAV, HEADER_NAV } from '@/helpers/constants';
 import { ArrowDown } from '@/assets/icons';
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import {NextRouter, useRouter} from "next/router";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 const Header = () => {
+  const router: NextRouter = useRouter();
   const headerVisibility = useWindowScroll();
 
   return (
-    <Styled.Header className={`header ${headerVisibility}`}>
+    <Styled.Header isNewsPage={router.pathname === '/news'} className={`header ${headerVisibility}`}>
       <div className="container">
         <div className={'logo'}>
           <Link href="/home">
@@ -51,6 +55,8 @@ const Header = () => {
               );
             })}
           </ul>
+          <LanguageSwitcher />
+          <HamburgerMenu />
         </nav>
       </div>
     </Styled.Header>

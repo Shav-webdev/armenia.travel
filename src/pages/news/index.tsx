@@ -2,9 +2,11 @@ import Styled from '@/pages/news/styled';
 import Section from '@/components/hoc/Layout/Section';
 import { getNews } from '@/pages/api';
 import { groupNewsByCategory } from '@/helpers/utils';
-import { ICategory } from '@/helpers/global.types';
+import {ICategory, IObjectKeys} from '@/helpers/global.types';
 import { useEffect, useState } from 'react';
 import NewsList from '@/pages/news/NewsList';
+import {pingBold, pingMedium} from '@/assets/fonts/fonts';
+import CategoryList from "@/pages/news/CategoryList";
 
 export const getStaticProps = async () => {
   return getNews();
@@ -28,28 +30,12 @@ const News = (props: any) => {
       <Styled.MainSection>
         <div className="container">
           <div className={'heading-wrapper'}>
-            <h1>News</h1>
+            <h1 className={`${pingBold.className}`}>News</h1>
           </div>
           <div className="news-wrapper">
             <div className={'news-category-list-wrapper'}>
-              <h3 className={'category-title'}>Categories</h3>
-              <ul className={'news-category-list scrollbar'}>
-                {news &&
-                  Object.entries(news)?.map((newsItem, idx) => {
-                    const [cat, news] = [newsItem[0], newsItem[1]];
-                    return (
-                      <li
-                        onClick={() => handleCategoryClick(cat)}
-                        className={`news-category-list-item ${
-                          activeCategory === cat ? 'active' : ''
-                        }`}
-                        key={cat}
-                      >
-                        {cat}
-                      </li>
-                    );
-                  })}
-              </ul>
+              <h3 className={`category-title ${pingMedium.className}`}>Categories</h3>
+              <CategoryList news={news} activeCategory={activeCategory} handleCategoryClick={handleCategoryClick}/>
             </div>
             <NewsList news={news} activeCategory={activeCategory} />
           </div>

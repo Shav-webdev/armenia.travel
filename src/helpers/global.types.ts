@@ -1,4 +1,5 @@
 import React from 'react';
+import {StaticImageData} from "next/image";
 
 export type NavItemType = {
   id: number;
@@ -35,3 +36,20 @@ export type ICategory = {
 export interface IObjectKeys {
   [key: string]: string | number;
 }
+
+export type ITabName = 'culture' | 'nature' | 'culinary' | 'leisure';
+
+export interface ITab {
+  tabName: ITabName;
+  icon: React.ReactNode;
+  title: string;
+}
+
+export type IFilterType = {
+  category: ITabName;
+  img: StaticImageData;
+  title: string;
+  url: string;
+}
+
+

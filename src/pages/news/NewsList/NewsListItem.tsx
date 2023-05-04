@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { INewsItem } from '@/helpers/global.types';
-import React, { useEffect, useState } from 'react';
+import {pingBold, pingMedium} from '@/assets/fonts/fonts';
 
 const NewsListItem = ({
   newsItem,
@@ -29,11 +30,11 @@ const NewsListItem = ({
       href={newsItem.Link}
       target={'_blank'}
     >
-      <div>
-        <h2>{newsItem.API}</h2>
+      <div className={'card-header'}>
+        <h2 className={`card-title ${pingBold.className}`}>{newsItem.API}</h2>
       </div>
-      <div>
-        <h2>{newsItem.Description}</h2>
+      <div className={'card-body'}>
+        <p className={`${pingMedium.className} card-description`}>{newsItem.Description}</p>
       </div>
     </Link>
   );

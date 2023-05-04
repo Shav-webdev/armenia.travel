@@ -1,11 +1,11 @@
-import Styled from '@/pages/home/styled';
-import Image from 'next/image';
-import headerBg from '@/assets/images/header_bg.png';
-import { helvetica, pingRegular, soundScapeBold } from '@/assets/fonts/fonts';
-import { ArrowSnack } from '@/assets/icons';
-import Section from '@/components/hoc/Layout/Section';
 import React from 'react';
+import Image from 'next/image';
+import Styled from '@/pages/home/styled';
+import { ArrowSnack } from '@/assets/icons';
+import headerBg from '@/assets/images/header_bg.png';
+import Section from '@/components/hoc/Layout/Section';
 import { useWindowScroll } from '@/hooks/useWindowScroll';
+import { helvetica, pingRegular, soundScapeBold } from '@/assets/fonts/fonts';
 
 const HeadingSection = () => {
   const actionOnScroll = useWindowScroll();

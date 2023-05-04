@@ -2,6 +2,7 @@ export const colors = {
   primaryColor: '#15233B',
   blue100: '#0D1522',
   blue700: '#7B7F86',
+  blue800: '#17428A',
   secondaryColor: '#F59C00',
   white: '#ffffff',
   white100: '#f8f8f8',
@@ -18,4 +19,6 @@ export const colors = {
   gray700: '#FAFAFA',
   gray800: 'rgba(255, 255, 255, 0.2)',
   gray900: '#373737',
+  layoutGradient: 'linear-gradient(90deg, rgba(51,62,49,1) 0%, rgba(82,151,171,1) 60%, rgba(146,197,255,1) 100%)',
+  newsItemBg: 'linear-gradient(90deg, rgba(51,62,49,1) 0%, rgba(82,151,171,1) 50%, rgba(86,116,149,1) 100%)'
 };
